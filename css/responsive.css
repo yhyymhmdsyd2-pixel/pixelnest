@@ -274,7 +274,11 @@
 }
 
 /* Questions */
-
+@media (max-width: 768px) {
+  .Questions::before {
+    width: 350%;
+  }
+}
 @media (max-width: 768px) {
   .faq-question {
     width: 360px;

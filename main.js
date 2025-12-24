@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= section.offsetTop) {
     sectionadd.classList.add("color");
   }
-  if (window.screenY >= sectionadd.offsetTop) {
+  if (window.screenY >= sectionadd.offsetTop - 100) {
     sectionadd.classList.remove("color");
   }
 });

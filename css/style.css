@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 :root {
-  --primry-color: #3b83f6;
+  --primry-color: #00c2ff;
   --sconde-color: #f3f4f6;
-  --main-color: #4e46e5;
+  --main-color: #6bcb77;
   --primry-padding-top: 150px;
   --primry-animation: 0.8s;
   --primry-transition: 0.8s;
@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  font-family: Inter;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -68,7 +68,7 @@ a {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: var(--primry-animation) ease;
+  transition: var(--primry-transition) ease;
 }
 
 .fade-in-scaleX {
@@ -78,19 +78,19 @@ a {
 .fade-in-right {
   opacity: 0;
   transform: translatex(100px);
-  transition: var(--primry-animation) ease;
+  transition: var(--primry-transition) ease;
 }
 
 .fade-in-left {
   opacity: 0;
   transform: translatex(-100px);
-  transition: var(--primry-animation) ease;
+  transition: var(--primry-transition) ease;
 }
 
 .fade-in-top {
   opacity: 0;
   transform: translatey(-100px);
-  transition: var(--primry-animation) ease;
+  transition: var(--primry-transition) ease;
 }
 
 .show {
@@ -120,7 +120,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 999999;
-  transition: all 0.8s ease;
+  transition: all var(--primry-transition) ease;
 }
 
 .header-i {
@@ -201,7 +201,7 @@ li a:hover:after {
   padding: 10px;
   background: #000000;
   right: 20px;
-  transition: all 0.8s ease;
+  transition: all var(--primry-transition) ease;
 }
 
 .Other-Services li a {
@@ -273,7 +273,7 @@ li a:hover:after {
   margin-top: 20px;
 }
 .contener-list {
-  width: 400px;
+  width: 540px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -296,6 +296,11 @@ li a:hover:after {
   color: var(--sconde-color);
   font-size: 20px;
   line-height: 1.5;
+}
+
+.contener-compewter {
+  width: 900px;
+  transform: scaleX(-1);
 }
 
 .buttum {
@@ -392,7 +397,7 @@ li a:hover:after {
   display: grid;
   place-content: center;
   margin-top: 30px;
-  transition: all 0.8s ease;
+  transition: all var(--primry-transition) ease;
 }
 
 .sidel:hover {
@@ -419,7 +424,7 @@ li a:hover:after {
   display: grid;
   place-content: center;
   margin-top: 30px;
-  transition: all 0.8s ease;
+  transition: all var(--primry-transition) ease;
 }
 
 .sider:hover {
@@ -459,7 +464,7 @@ li a:hover:after {
   border-radius: 10px;
   margin: 15px 0;
   position: relative;
-  transition: all 0.8s ease;
+  transition: all var(--primry-transition) ease;
 }
 
 .Features-box-flex:hover {
@@ -523,7 +528,13 @@ li a:hover:after {
   box-shadow: 0 0 10px 0 var(--primry-color);
   border-radius: 10px;
   padding: 20px;
-  transition: all 0.8s ease-out;
+  transition: all var(--primry-transition) ease-out;
+}
+
+.steap:hover {
+  transform: translateY(-15px);
+  color: var(--primry-color);
+  box-shadow: 0 0 20px 0 var(--primry-color);
 }
 
 .steap span {
@@ -561,7 +572,7 @@ li a:hover:after {
 .screenshots-contener img {
   width: 300px;
   border-radius: 35px;
-  transition: all ease-in-out 0.8s;
+  transition: all ease-in-out var(--primry-transition);
 }
 
 .Testimonials {
@@ -762,7 +773,7 @@ li a:hover:after {
   left: 0;
   top: 0;
   z-index: -1;
-  transition: 0.9s;
+  transition: var(--primry-transition);
 }
 
 .faq-question-img:hover::after {
@@ -855,7 +866,7 @@ li a:hover:after {
   background-color: var(--primry-color);
   padding-bottom: var(--primry-padding-top);
   padding-top: var(--primry-padding-top);
-  transition: all 0.8s;
+  transition: all var(--primry-transition);
 }
 
 .cta {
