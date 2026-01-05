@@ -3,66 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Pricing – PixelNest</title>
+
+    <!-- Font Awesome CDN للأيقونات -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <style>
       body {
-        background-color: #00c3ff83;
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      .container {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      p {
+        color: #666;
+      }
+      .pricing {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        width: 260px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+      .price {
+        font-size: 32px;
+        margin: 20px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        margin: 10px 0;
+      }
+      footer {
+        margin-top: 60px;
+        font-size: 14px;
+      }
+      footer a {
+        color: #555;
+        text-decoration: none;
+        margin: 0 8px;
       }
     </style>
   </head>
   <body>
-    <div class="Pricing" id="Pricing">
-      <div class="Pricing-header">
-        <h2 class="head-list">Our Pricing Plans</h2>
-        <p class="head-p">Choose the plan that fits your app needs</p>
-      </div>
-      <div class="Pricing-container">
-        <!-- Basic Plan -->
-        <div class="Pricing-card fade-in-scaleX">
-          <h3>Basic</h3>
-          <p class="Price">$9<span>/month</span></p>
+    <div class="container">
+      <h1>Simple Pricing</h1>
+      <p>High-quality SaaS landing page templates, delivered digitally.</p>
+
+      <div class="pricing">
+        <div class="card">
+          <h2><i class="fa-solid fa-star"></i> Starter</h2>
+          <div class="price">$19</div>
           <ul>
-            <li>✅ 5 Projects</li>
-            <li>✅ 10 GB Storage</li>
-            <li>✅ Basic Analytics</li>
-            <li>✅ Email Support</li>
-            <li class="optional">➕ Limited Integrations</li>
-            <li class="optional">➕ Community Access</li>
+            <li>1 SaaS landing page template</li>
+            <li>Commercial use</li>
+            <li>Free updates</li>
           </ul>
-          <button class="btn">Choose Plan</button>
         </div>
 
-        <!-- Standard Plan -->
-        <div class="Pricing-card popular fade-in-scaleX">
-          <h3>Standard</h3>
-          <p class="Price">$29<span>/month</span></p>
+        <div class="card">
+          <h2><i class="fa-solid fa-crown"></i> Pro</h2>
+          <div class="price">$39</div>
           <ul>
-            <li>✅ 20 Projects</li>
-            <li>✅ 50 GB Storage</li>
-            <li>✅ Advanced Analytics</li>
-            <li>✅ Priority Email Support</li>
-            <li>✅ Team Collaboration</li>
-            <li class="optional">➕ API Access</li>
+            <li>All templates</li>
+            <li>Commercial use</li>
+            <li>Lifetime updates</li>
           </ul>
-          <button class="btn">Choose Plan</button>
-        </div>
-
-        <!-- Premium Plan -->
-        <div class="Pricing-card fade-in-scaleX">
-          <h3>Premium</h3>
-          <p class="Price">$59<span>/month</span></p>
-          <ul>
-            <li>✅ Unlimited Projects</li>
-            <li>✅ 200 GB Storage</li>
-            <li>✅ Full Analytics & Reports</li>
-            <li>✅ 24/7 Support</li>
-            <li>✅ Team Management</li>
-            <li class="optional">➕ Custom Integrations</li>
-          </ul>
-          <button class="btn">Choose Plan</button>
         </div>
       </div>
+
+      <footer>
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="refund.html">Refund Policy</a> |
+        <a href="index.html">Home</a>
+      </footer>
     </div>
   </body>
 </html>
