@@ -3,17 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
     <title>PixelNest</title>
@@ -32,7 +23,7 @@
           <li><a href="#Screenshots">View Demos</a></li>
           <li><a href="#works">Documentation</a></li>
           <li>
-            <a class="Other">Other Services</a>
+            <button class="Other">Other Services</button>
             <ul class="Other-Services opacty">
               <li><a href="#Brand">Brand</a></li>
               <li><a href="#Features">Features</a></li>
@@ -62,6 +53,10 @@
         <img
           src="img/input.webp"
           alt=""
+          max-width="900"
+          max-height="747"
+          fetchpriority="high"
+          loading="eager"
           class="contener-compewter fade-in-right"
         />
       </div>
@@ -436,7 +431,7 @@
 
           <!-- Support -->
           <div class="footer-links">
-            <h4>Support</h4>
+            <h3>Support</h3>
             <ul class="footer-ul">
               <li><a href="#">Help Center</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -447,14 +442,17 @@
 
           <!-- App -->
           <div class="footer-app">
-            <h4>Get the App</h4>
+            <h3>Get the App</h3>
             <button class="store-btn">Google Play</button>
             <button class="store-btn">App Store</button>
           </div>
         </div>
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="refund.html">Refund Policy</a>
 
         <div class="footer-bottom">
-          <p>© <span class="years"></span> AppLand. All rights reserved.</p>
+          <p>© <span class="years"></span> PixelNest. All rights reserved.</p>
         </div>
       </footer>
     </div>

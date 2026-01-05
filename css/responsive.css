@@ -72,7 +72,7 @@
     font-weight: 400;
   }
   li a {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
   }
   .header-purches {
@@ -99,6 +99,17 @@
     right: 0px;
     flex-wrap: wrap;
   }
+  .Other {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .active {
+    background-color: black;
+    height: 25px;
+  }
+  .header-ul {
+    gap: 10px;
+  }
 }
 
 /* cpmpewter */
@@ -118,7 +129,7 @@
 
 @media (max-width: 950px) {
   .contener-compewter {
-    width: 430px;
+    width: 530px;
     position: absolute;
     right: 0;
   }
