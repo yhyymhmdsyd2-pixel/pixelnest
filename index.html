@@ -3,13 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="main.css" /> -->
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <meta
+      name="description"
+      content="PixelNest is an innovative platform for design and tech enthusiasts, offering creative tools, ready-made projects, and inspiring content to turn your ideas into digital reality with ease and professionalism."
+    />
 
+    <style>
+      @font-face {
+        font-family: "Cairo";
+        src: url("./Cairo/Cairo-Regular.woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Cairo";
+        src: url("./Cairo/Cairo-SemiBold.woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Cairo";
+        src: url("./Cairo/Cairo-Bold.woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Cairo", sans-serif;
+      }
+
+      html {
+        overflow-x: hidden;
+      }
+
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+      ul {
+        list-style: none;
+        text-decoration: none;
+      }
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+
+      ::-webkit-scrollbar-track {
+        box-shadow: 0 0 10px #add inset;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+          45deg,
+          var(--primry-color),
+          #f3f4f6b5,
+          #4e46e5aa
+        );
+        border-radius: 10px;
+        background-size: 300% 300%;
+        animation: scrollber 1s ease-in-out infinite;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-image: linear-gradient(
+          45deg,
+          var(--primry-color),
+          var(--sconde-color),
+          var(--main-color)
+        );
+      }
+    </style>
+    <link rel="stylesheet" href="main.css" />
     <title>PixelNest</title>
     <link href="apple-touch-icon.png" type="image/x-icon" rel="icon" />
   </head>
@@ -25,16 +100,26 @@
           <li><a href="#Home" class="li-color">Home</a></li>
           <li><a href="#Screenshots">View Demos</a></li>
           <li><a href="#works">Documentation</a></li>
+          <li><a href="#Brand">Brand</a></li>
           <li>
-            <button class="Other">Other Services</button>
-            <ul class="Other-Services opacty">
-              <li><a href="#Brand">Brand</a></li>
+            <button class="Other othercolor">Other Services</button>
+            <div class="Other-Services opacty">
+              <img
+                src="img/input.webp"
+                alt=""
+                style="width: 200px"
+                class="hide-mobile"
+              />
+            <ul class="ulserver">
+              
               <li><a href="#Features">Features</a></li>
               <li><a href="#Testimonials">Testimonials</a></li>
               <li><a href="#Pricing">Pricing</a></li>
               <li><a href="#Questions">Support</a></li>
               <li><a href="#Contact">Contact</a></li>
             </ul>
+            </div>
+            
           </li>
         </ul>
         <a href="#" class="header-purches">
@@ -54,13 +139,12 @@
           </div>
         </div>
         <img
-          src="img/input.webp"
-          alt=""
-          max-width="900"
-          max-height="747"
-          fetchpriority="high"
-          loading="eager"
-          class="contener-compewter fade-in-right"
+        src="img/input.webp"
+        alt="PixelNest App Preview"
+        width="900"
+        height="747"
+        loading="eager"
+        class="contener-compewter"
         />
       </div>
       <div class="TrustedBy" id="Brand">
@@ -176,33 +260,83 @@
       </div>
       <div class="Screenshots" id="Screenshots">
         <h2 class="head-list">App Interface Preview</h2>
-        <p class="head-p">Take a look inside Taskio</p>
+        <p class="head-p">Take a look inside PixelNest</p>
         <div class="screenshots-contener">
-          <img
-            src="img/Notifications-mobil.png"
-            alt=""
-            class="fade-in-scaleX"
-          />
-          <img
-            src="img/notifications-iphone-screen-1.png"
-            alt=""
-            class="fade-in-scaleX"
-          />
-          <img
-            src="img/App features demonstration on modern iPhone-Picsart-CropImage.png"
-            alt=""
-            class="fade-in-scaleX"
-          />
-          <img
-            src="img/Dashboard overview on iPhone mockup-Picsart-CropImage.png"
-            alt=""
-            class="fade-in-scaleX"
-          />
-          <img
-            src="img/Welcome back mobile login screen-Picsart-CropImage.png"
-            alt=""
-            class="fade-in-scaleX"
-          />
+          <picture>
+            <source
+              srcset="img/SQM/w.avif"
+              media="(max-width:768px)"
+              class="img"
+            />
+            <img
+              src="img/SQ/Welcome.avif"
+              alt=""
+              class="fade-in-scaleX img"
+              width="300"
+              height="auto"
+              style="max-width: 300; max-height: 600px"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/SQM/Ap.avif"
+              media="(max-width:768px)"
+              class="img"
+            />
+            <img
+              src="img/SQ/App.avif"
+              alt=""
+              class="fade-in-scaleX img"
+              width="300"
+              height="auto"
+              style="max-width: 300; max-height: 600px"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/SQM/Dashboard.avif"
+              media="(max-width:768px)"
+              class="img"
+            />
+            <img
+              src="img/SQ/Dashboard.avif"
+              alt=""
+              class="fade-in-scaleX img"
+              width="300"
+              height="auto"
+              style="max-width: 300; max-height: 600px"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/SQM/Notifications-mobil.avif"
+              media="(max-width:768px)"
+              class="img"
+            />
+            <img
+              src="img/SQ/Notifications-mobil.avif"
+              alt=""
+              class="fade-in-scaleX img"
+              width="300"
+              height="auto"
+              style="max-width: 300; max-height: 600px"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/SQM/notification.avif"
+              media="(max-width:768px)"
+              class="img"
+            />
+            <img
+              src="img/SQ/notifications.avif"
+              alt=""
+              class="fade-in-scaleX img"
+              width="300"
+              height="auto"
+              style="max-width: 300; max-height: 600px"
+            />
+          </picture>
         </div>
       </div>
       <div class="Testimonials fade-in-left" id="Testimonials">
@@ -218,7 +352,7 @@
           <div class="Testimonials-gruob-img">
             <div class="Testimonials-box-flex fade-in">
               <img
-                src="img/photo1_edit_123302318486913.png"
+                src="img/photo/Gemini_Generated_Image_4ebwzm4ebwzm4ebw.webp"
                 alt=""
                 Sarah
                 L.
@@ -232,7 +366,7 @@
             </div>
             <div class="Testimonials-box-flex fade-in">
               <img
-                src="img/photo2_edit_123310207532224.png"
+                src="img/photo/photo2_edit_123310207532224.webp"
                 alt="James K."
                 class="Testimonials-avatar"
               />
@@ -244,7 +378,7 @@
             </div>
             <div class="Testimonials-box-flex fade-in">
               <img
-                src="img/photo3_edit_124197516231047.png"
+                src="img/photo/photo3_edit_124197516231047.webp"
                 alt="Emma W."
                 class="Testimonials-avatar"
               />
@@ -256,7 +390,7 @@
             </div>
             <div class="Testimonials-box-flex fade-in">
               <img
-                src="img/photo4_edit_124224572885209.png"
+                src="img/photo/photo4_edit_124224572885209.webp"
                 alt="Michael T."
                 class="Testimonials-avatar"
               />
@@ -268,7 +402,7 @@
             </div>
             <div class="Testimonials-box-flex fade-in">
               <img
-                src="img/photo5_edit_124211874064899.png"
+                src="img/photo/photo5_edit_124211874064899.webp"
                 alt="Linda R."
                 class="Testimonials-avatar"
               />
@@ -344,7 +478,7 @@
         <div class="Questions-container">
           <div class="faq-question">
             <div class="faq-question-img">
-              <img src="img/task.png" alt="" />
+              <img src="img/Q/task.png" alt="" />
               <h2>What is the purpose of the app?</h2>
               <span class="faq-icon">+</span>
             </div>
@@ -355,7 +489,7 @@
           </div>
           <div class="faq-question">
             <div class="faq-question-img">
-              <img src="img/money.png" alt="" />
+              <img src="img/Q/money.png" alt="" />
               <h2>Is the app free?</h2>
               <span class="faq-icon">+</span>
             </div>
@@ -366,7 +500,7 @@
           </div>
           <div class="faq-question">
             <div class="faq-question-img">
-              <img src="img/smartphone-tablet.png" alt="" />
+              <img src="img/Q/smartphone-tablet.png" alt="" />
               <h2>Does the app support mobile devices?</h2>
               <span class="faq-icon">+</span>
             </div>
@@ -377,7 +511,7 @@
           </div>
           <div class="faq-question">
             <div class="faq-question-img">
-              <img src="img/customer-support.png" alt="" />
+              <img src="img/Q/customer-support.png" alt="" />
               <h2>How can I contact customer support?</h2>
               <span class="faq-icon">+</span>
             </div>
@@ -423,7 +557,7 @@
 
           <!-- Links -->
           <div class="footer-links">
-            <h4>Company</h4>
+            <h3>Company</h3>
             <ul class="footer-ul">
               <li><a href="#">About</a></li>
               <li><a href="#">Features</a></li>
@@ -449,16 +583,11 @@
             <button class="store-btn">Google Play</button>
             <button class="store-btn">App Store</button>
           </div>
-        </div>
-        <a href="./terms.html">Terms of Service</a> |
-        <a href="./privacy.html">Privacy Policy</a> |
-        <a href="./refund.html">Refund Policy</a> |
-        <a href="./Pricing.html">Pricing</a>
-        <div class="footer-bottom">
-          <p>© <span class="years"></span> PixelNest. All rights reserved.</p>
-        </div>
+          <div class="footer-bottom">
+            <p>© <span class="years"></span> Appify. All rights reserved.</p>
+          </div>
       </footer>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </body>
 </html>

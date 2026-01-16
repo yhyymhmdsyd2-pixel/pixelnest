@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --primry-color: #00c2ff;
+  --sconde-color: #f3f4f6;
+  --main-color: #6bcb77;
+  --primry-padding-top: 150px;
+  --primry-animation: 0.8s;
+  --primry-transition: 0.8s;
+}
+
+.contener {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: var(--primry-transition) ease;
+}
+
+.fade-in-scaleX {
+  transform: scaleX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translatex(100px);
+  transition: var(--primry-transition) ease;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translatex(-100px);
+  transition: var(--primry-transition) ease;
+}
+
+.fade-in-top {
+  opacity: 0;
+  transform: translatey(-100px);
+  transition: var(--primry-transition) ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+  transform: scaleX(1);
+}
+
+.collr-one {
+  background-image: linear-gradient(
+    45deg,
+    var(--primry-color),
+    #030304,
+    var(--main-color)
+  );
+}
+
+.color {
+  background-color: #000000;
+  padding-bottom: 10px;
+}
+
+.sider {
+  position: absolute;
+  left: 200px;
+  bottom: -75px;
+  background-color: rgb(255 255 255 / 12%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  margin-top: 30px;
+  transition: all var(--primry-transition) ease;
+}
+
+.sidel:hover {
+  background-color: rgba(255, 255, 255, 0.241);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.241);
+}
+
+.side-right {
+  z-index: 2005;
+  font-size: 23px;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.sidel {
+  position: absolute;
+  z-index: 2025;
+  right: 200px;
+  bottom: -75px;
+  background-color: rgb(255 255 255 / 12%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  margin-top: 30px;
+  transition: all var(--primry-transition) ease;
+}
+
+.sider:hover {
+  background-color: rgba(255, 255, 255, 0.241);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.241);
+}
+
+.side-left {
+  pointer-events: all;
+  z-index: 2005;
+  font-size: 23px;
+  cursor: pointer;
+  color: var(--primry-color);
+}

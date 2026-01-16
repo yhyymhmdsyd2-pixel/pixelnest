@@ -11,7 +11,7 @@ let observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.5 },
 );
 
 [...right, ...left, ...fadetop, ...bottom, ...scaleX].forEach((el) => {
@@ -31,11 +31,25 @@ window.addEventListener("scroll", () => {
 });
 
 let links = document.querySelectorAll("ul li a");
+let otherserver = document.querySelector(".Other");
 
 links.forEach((link) => {
-  // 3️⃣ Functions + Events
   link.onclick = function () {
-    // 4️⃣ forEach
+    links.forEach((a) => a.classList.remove("li-color"));
+    this.classList.add("li-color");
+  };
+});
+
+otherserver.addEventListener("click", function () {
+  links.forEach((o) => o.classList.remove("li-color"));
+  otherserver.classList.toggle("othercolor");
+  otherserver.classList.toggle("li-color");
+});
+
+let link = document.querySelectorAll(".ulserver li a");
+
+links.forEach((link) => {
+  link.onclick = function () {
     links.forEach((a) => a.classList.remove("li-color"));
     this.classList.add("li-color");
   };
