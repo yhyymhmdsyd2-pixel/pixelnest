@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,12 +32,12 @@
         font-style: normal;
         font-display: swap;
       }
-      
+
       @font-face {
-  font-family: "Font Awesome 6 Free";
-  src: url("/webfonts/fa-solid-900.woff2") format("woff2");
-  font-display: swap;
-}
+        font-family: "Font Awesome 6 Free";
+        src: url("/webfonts/fa-solid-900.woff2") format("woff2");
+        font-display: swap;
+      }
 
       body {
         margin: 0;
@@ -90,7 +90,8 @@
         );
       }
     </style>
-  <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="main.css" />
 
     <title>PixelNest</title>
     <link href="apple-touch-icon.png" type="image/x-icon" rel="icon" />
@@ -108,25 +109,17 @@
           <li><a href="#Screenshots">View Demos</a></li>
           <li><a href="#works">Documentation</a></li>
           <li><a href="#Brand">Brand</a></li>
-          <li>
+          <li style="position: relative">
             <button class="Other othercolor">Other Services</button>
             <div class="Other-Services opacty">
-              <img
-                src="img/input(1).avif"
-                alt=""
-                style="width: 200px"
-                class="hide-mobile"
-              />
-            <ul class="ulserver">
-              
-              <li><a href="#Features">Features</a></li>
-              <li><a href="#Testimonials">Testimonials</a></li>
-              <li><a href="#Pricing">Pricing</a></li>
-              <li><a href="#Questions">Support</a></li>
-              <li><a href="#Contact">Contact</a></li>
-            </ul>
+              <ul class="ulserver">
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#Pricing">Pricing</a></li>
+                <li><a href="#Questions">Support</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
             </div>
-            
           </li>
         </ul>
         <a href="#" class="header-purches">
@@ -146,12 +139,12 @@
           </div>
         </div>
         <img
-        src="img/input(1).avif"
-        alt="PixelNest App Preview"
-        width="900"
-        height="747"
-        loading="eager"
-        class="contener-compewter"
+          src="img/input(1).avif"
+          alt="PixelNest App Preview"
+          width="900"
+          height="747"
+          loading="eager"
+          class="contener-compewter"
         />
       </div>
       <div class="TrustedBy" id="Brand">
@@ -590,9 +583,11 @@
             <button class="store-btn">Google Play</button>
             <button class="store-btn">App Store</button>
           </div>
-          <div class="footer-bottom">
-            <p>© <span class="years"></span> Appify. All rights reserved.</p>
-          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span class="years"></span> PixelNest. All rights reserved.</p>
+        </div>
       </footer>
     </div>
     <script src="main.js" defer></script>
