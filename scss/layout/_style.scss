@@ -381,25 +381,21 @@ li a:hover:after {
 }
 
 .steap {
-  box-shadow: 0 0 10px 0 var(--primry-color);
+  // box-shadow: 0 0 10px 0 var(--primry-color);
   border-radius: 10px;
   padding: 20px;
   transition: all var(--primry-transition) ease-out;
 }
 
 .steap:hover {
-  transform: translateY(-15px);
-  color: var(--primry-color);
   box-shadow: 0 0 20px 0 var(--primry-color);
 }
 
 .steap span {
   font-size: 40px;
   font-weight: 300;
-  box-shadow: 0 0 10px 0 var(--primry-color);
-  border-radius: 10px;
+  color: var(--primry-color);
   padding: 5px;
-  background-color: var(--primry-color);
 }
 
 .steap h2 {
@@ -412,6 +408,8 @@ li a:hover:after {
   font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: 100;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .Screenshots {
@@ -537,6 +535,12 @@ li a:hover:after {
   padding: 0;
   margin: 20px 0;
   text-align: left;
+}
+
+.pd {
+  text-align: center;
+  font-size: large;
+  margin: 18px;
 }
 
 .Pricing-card ul li {
